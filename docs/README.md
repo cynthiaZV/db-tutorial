@@ -1,95 +1,109 @@
 ---
 home: true
-heroImage: https://raw.githubusercontent.com/dunwu/images/dev/common/dunwu-logo-200.png
+heroImage: img/bg.gif
 heroText: DB-TUTORIAL
-tagline: 💾 db-tutorial 是一个数据库教程。
-actionLink: /
+tagline: ☕ db-tutorial 是一个数据库教程。
+bannerBg: none
+postList: none
 footer: CC-BY-SA-4.0 Licensed | Copyright © 2018-Now Dunwu
 ---
 
-![license](https://badgen.net/github/license/dunwu/db-tutorial)
-![build](https://api.travis-ci.com/dunwu/db-tutorial.svg?branch=master)
+<p align="center">
+
+  <a href="https://github.com/dunwu/db-tutorial">
+      <img alt="star" class="no-zoom" src="https://img.shields.io/github/stars/dunwu/db-tutorial?style=for-the-badge">
+  </a>
+
+  <a href="https://github.com/dunwu/db-tutorial">
+      <img alt="fork" class="no-zoom" src="https://img.shields.io/github/forks/dunwu/db-tutorial?style=for-the-badge">
+  </a>
+
+  <a href="https://github.com/dunwu/db-tutorial/commits/master">
+      <img alt="build" class="no-zoom" src="https://img.shields.io/github/actions/workflow/status/dunwu/db-tutorial/deploy.yml?style=for-the-badge">
+  </a>
+
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+      <img alt="code style" class="no-zoom" src="https://img.shields.io/github/license/dunwu/db-tutorial?style=for-the-badge">
+  </a>
+
+</p>
 
 > 💾 **db-tutorial** 是一个数据库教程。
 >
 > - 🔁 项目同步维护：[Github](https://github.com/dunwu/db-tutorial/) | [Gitee](https://gitee.com/turnon/db-tutorial/)
 > - 📖 电子书阅读：[Github Pages](https://dunwu.github.io/db-tutorial/) | [Gitee Pages](https://turnon.gitee.io/db-tutorial/)
 
-## 数据库原理
+## 数据库综合
 
-### 数据结构
+### 分布式存储原理
 
-TODO...
+#### 分布式理论
 
-### 分布式
+- [分布式一致性](https://dunwu.github.io/blog/pages/dac0e2/)
+- [深入剖析共识性算法 Paxos](https://dunwu.github.io/blog/pages/874539/)
+- [深入剖析共识性算法 Raft](https://dunwu.github.io/blog/pages/e40812/)
+- [分布式算法 Gossip](https://dunwu.github.io/blog/pages/d15993/)
 
-- [分布式简介](https://dunwu.github.io/design/distributed/分布式简介.html)
-- [分布式基础理论](https://dunwu.github.io/design/distributed/分布式理论.html) - 关键词：`拜占庭将军`、`CAP`、`BASE`
-- [分布式算法 Paxos](https://dunwu.github.io/design/distributed/分布式算法Paxos.html) - 关键词：`共识性算法`
-- [分布式算法 Raft](https://dunwu.github.io/design/distributed/分布式算法Raft.html) - 关键词：`共识性算法`
-- [负载均衡](https://dunwu.github.io/design/distributed/负载均衡.html) - 关键词：`轮询`、`随机`、`最少连接`、`源地址哈希`、`一致性哈希`、`虚拟 hash 槽`
-- [消息队列](https://dunwu.github.io/design/distributed/消息队列.html) - 关键词：`重复消费`、`消息丢失`、`消息顺序性`、`消息积压`
-- [分布式存储](https://dunwu.github.io/design/distributed/分布式存储.html) - 关键词：`读写分离`、`分库分表`、`迁移`、`扩容`
-- [分布式缓存](https://dunwu.github.io/design/distributed/分布式缓存.html) - 关键词：`进程内缓存`、`分布式缓存`、`缓存雪崩`、`缓存穿透`、`缓存击穿`、`缓存更新`、`缓存预热`、`缓存降级`
-- [分布式锁](https://dunwu.github.io/design/distributed/分布式锁.html) - 关键词：`数据库`、`Redis`、`ZooKeeper`、`互斥`、`可重入`、`死锁`、`容错`、`自旋尝试`
-- [分布式 ID](https://dunwu.github.io/design/distributed/分布式ID.html) - 关键词：`UUID`、`自增序列`、`雪花算法`、`Leaf`
-- [分布式事务](https://dunwu.github.io/design/distributed/分布式事务.html) - 关键词：`2PC`、`3PC`、`TCC`、`本地消息表`、`MQ 消息`、`SAGA`
-- [分布式会话](https://dunwu.github.io/design/distributed/分布式会话.html) - 关键词：`粘性 Session`、`Session 复制共享`、`基于缓存的 session 共享`
-- [流量控制](https://dunwu.github.io/design/distributed/流量控制.html) - 关键词：`计数器法`、`时间窗口法`、`令牌桶法`、`漏桶法`
+#### 分布式关键技术
 
-## 关系型数据库
+##### 流量调度
 
-> [关系型数据库](sql) 整理主流关系型数据库知识点。
+- [流量控制](https://dunwu.github.io/blog/pages/282676/)
+- [负载均衡](https://dunwu.github.io/blog/pages/98a1c1/)
+- [服务路由](https://dunwu.github.io/blog/pages/d04ece/)
+- [分布式会话基本原理](https://dunwu.github.io/blog/pages/3e66c2/)
 
-- [关系型数据库面试总结](sql/common/sql-interview.md) 💯
-- [SQL Cheat Sheet](sql/common/sql-cheat-sheet.md) 是一个 SQL 入门教程。
+##### 数据调度
 
-### [Mysql](sql/mysql)
-
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200716103611.png)
-
-- [Mysql 应用指南](sql/mysql/mysql-quickstart.md) ⚡
-- [Mysql 工作流](sql/mysql/mysql-workflow.md) - 关键词：`连接`、`缓存`、`语法分析`、`优化`、`执行引擎`、`redo log`、`bin log`、`两阶段提交`
-- [Mysql 索引](sql/mysql/mysql-index.md) - 关键词：`Hash`、`B 树`、`聚簇索引`、`回表`
-- [Mysql 锁](sql/mysql/mysql-lock.md) - 关键词：`乐观锁`、`表级锁`、`行级锁`、`意向锁`、`MVCC`、`Next-key 锁`
-- [Mysql 事务](sql/mysql/mysql-transaction.md) - 关键词：`ACID`、`AUTOCOMMIT`、`事务隔离级别`、`死锁`、`分布式事务`
-- [Mysql 性能优化](sql/mysql/mysql-optimization.md)
-- [Mysql 运维](sql/mysql/mysql-ops.md) 🔨
-- [Mysql 配置](sql/mysql/mysql-config.md)
-- [Mysql 问题](sql/mysql/mysql-faq.md)
+- [缓存基本原理](https://dunwu.github.io/blog/pages/471208/)
+- [读写分离基本原理](https://dunwu.github.io/blog/pages/7da6ca/)
+- [分库分表基本原理](https://dunwu.github.io/blog/pages/103382/)
+- [分布式 ID 基本原理](https://dunwu.github.io/blog/pages/0b2e59/)
+- [分布式事务基本原理](https://dunwu.github.io/blog/pages/910bad/)
+- [分布式锁基本原理](https://dunwu.github.io/blog/pages/69360c/)
 
 ### 其他
 
-- [H2 应用指南](sql/h2.md)
-- [SqLite 应用指南](sql/sqlite.md)
-- [PostgreSQL 应用指南](sql/postgresql.md)
+- [Nosql 技术选型](12.数据库/01.数据库综合/01.Nosql技术选型.md)
+- [数据结构与数据库索引](12.数据库/01.数据库综合/02.数据结构与数据库索引.md)
 
-## 列式数据库
+## 数据库中间件
 
-### HBase
+- [ShardingSphere 简介](12.数据库/02.数据库中间件/01.Shardingsphere/01.ShardingSphere简介.md)
+- [ShardingSphere Jdbc](12.数据库/02.数据库中间件/01.Shardingsphere/02.ShardingSphereJdbc.md)
+- [版本管理中间件 Flyway](12.数据库/02.数据库中间件/02.Flyway.md)
 
-> [HBase](https://dunwu.github.io/bigdata-tutorial/hbase) 📚 因为常用于大数据项目，所以将其文档和源码整理在 [bigdata-tutorial](https://dunwu.github.io/bigdata-tutorial/) 项目中。
+## 关系型数据库
 
-- [HBase 原理](https://github.com/dunwu/bigdata-tutorial/blob/master/docs/hbase/HBase原理.md) ⚡
-- [HBase 命令](https://github.com/dunwu/bigdata-tutorial/blob/master/docs/hbase/HBase命令.md)
-- [HBase 应用](https://github.com/dunwu/bigdata-tutorial/blob/master/docs/hbase/HBase应用.md)
-- [HBase 运维](https://github.com/dunwu/bigdata-tutorial/blob/master/docs/hbase/HBase运维.md)
+> [关系型数据库](12.数据库/03.关系型数据库) 整理主流关系型数据库知识点。
 
-## KV 数据库
+### 关系型数据库综合
 
-### Redis
+- [关系型数据库面试总结](12.数据库/03.关系型数据库/01.综合/01.关系型数据库面试.md) 💯
+- [SQL 语法基础特性](12.数据库/03.关系型数据库/01.综合/02.SQL语法基础特性.md)
+- [SQL 语法高级特性](12.数据库/03.关系型数据库/01.综合/03.SQL语法高级特性.md)
+- [扩展 SQL](12.数据库/03.关系型数据库/01.综合/03.扩展SQL.md)
+- [SQL Cheat Sheet](12.数据库/03.关系型数据库/01.综合/99.SqlCheatSheet.md)
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200713105627.png)
+### Mysql
 
-- [Redis 面试总结](nosql/redis/redis-interview.md) 💯
-- [Redis 应用指南](nosql/redis/redis-quickstart.md) ⚡ - 关键词：`内存淘汰`、`事件`、`事务`、`管道`、`发布与订阅`
-- [Redis 数据类型和应用](nosql/redis/redis-datatype.md) - 关键词：`STRING`、`HASH`、`LIST`、`SET`、`ZSET`、`BitMap`、`HyperLogLog`、`Geo`
-- [Redis 持久化](nosql/redis/redis-persistence.md) - 关键词：`RDB`、`AOF`、`SAVE`、`BGSAVE`、`appendfsync`
-- [Redis 复制](nosql/redis/redis-replication.md) - 关键词：`SLAVEOF`、`SYNC`、`PSYNC`、`REPLCONF ACK`
-- [Redis 哨兵](nosql/redis/redis-sentinel.md) - 关键词：`Sentinel`、`PING`、`INFO`、`Raft`
-- [Redis 集群](nosql/redis/redis-cluster.md) - 关键词：`CLUSTER MEET`、`Hash slot`、`MOVED`、`ASK`、`SLAVEOF no one`、`redis-trib`
-- [Redis 实战](nosql/redis/redis-action.md) - 关键词：`缓存`、`分布式锁`、`布隆过滤器`
-- [Redis 运维](nosql/redis/redis-ops.md) 🔨 - 关键词：`安装`、`命令`、`集群`、`客户端`
+![img](https://raw.githubusercontent.com/dunwu/images/master/snap/20200716103611.png)
+
+- [Mysql 应用指南](12.数据库/03.关系型数据库/02.Mysql/01.Mysql应用指南.md) ⚡
+- [Mysql 工作流](12.数据库/03.关系型数据库/02.Mysql/02.MySQL工作流.md) - 关键词：`连接`、`缓存`、`语法分析`、`优化`、`执行引擎`、`redo log`、`bin log`、`两阶段提交`
+- [Mysql 事务](12.数据库/03.关系型数据库/02.Mysql/03.Mysql事务.md) - 关键词：`ACID`、`AUTOCOMMIT`、`事务隔离级别`、`死锁`、`分布式事务`
+- [Mysql 锁](12.数据库/03.关系型数据库/02.Mysql/04.Mysql锁.md) - 关键词：`乐观锁`、`表级锁`、`行级锁`、`意向锁`、`MVCC`、`Next-key 锁`
+- [Mysql 索引](12.数据库/03.关系型数据库/02.Mysql/05.Mysql索引.md) - 关键词：`Hash`、`B 树`、`聚簇索引`、`回表`
+- [Mysql 性能优化](12.数据库/03.关系型数据库/02.Mysql/06.Mysql性能优化.md)
+- [Mysql 运维](12.数据库/03.关系型数据库/02.Mysql/20.Mysql运维.md) 🔨
+- [Mysql 配置](12.数据库/03.关系型数据库/02.Mysql/21.Mysql配置.md) 🔨
+- [Mysql 问题](12.数据库/03.关系型数据库/02.Mysql/99.Mysql常见问题.md)
+
+### 其他
+
+- [PostgreSQL 应用指南](12.数据库/03.关系型数据库/99.其他/01.PostgreSQL.md)
+- [H2 应用指南](12.数据库/03.关系型数据库/99.其他/02.H2.md)
+- [SqLite 应用指南](12.数据库/03.关系型数据库/99.其他/03.Sqlite.md)
 
 ## 文档数据库
 
@@ -101,14 +115,47 @@ TODO...
 >
 > MongoDB 最大的特点是它支持的查询语言非常强大，其语法有点类似于面向对象的查询语言，几乎可以实现类似关系数据库单表查询的绝大部分功能，而且还支持对数据建立索引。
 
-- [MongoDB 应用指南](nosql/mongodb/mongodb-quickstart.md)
-- [MongoDB 聚合操作](nosql/mongodb/mongodb-aggregation.md)
-- [MongoDB 建模](nosql/mongodb/mongodb-model.md)
-- [MongoDB 建模示例](nosql/mongodb/mongodb-model-example.md)
-- [MongoDB 索引](nosql/mongodb/mongodb-index.md)
-- [MongoDB 复制](nosql/mongodb/mongodb-replication.md)
-- [MongoDB 分片](nosql/mongodb/mongodb-sharding.md)
-- [MongoDB 运维](nosql/mongodb/mongodb-ops.md)
+- [MongoDB 应用指南](12.数据库/04.文档数据库/01.MongoDB/01.MongoDB应用指南.md)
+- [MongoDB 的 CRUD 操作](12.数据库/04.文档数据库/01.MongoDB/02.MongoDB的CRUD操作.md)
+- [MongoDB 聚合操作](12.数据库/04.文档数据库/01.MongoDB/03.MongoDB的聚合操作.md)
+- [MongoDB 事务](12.数据库/04.文档数据库/01.MongoDB/04.MongoDB事务.md)
+- [MongoDB 建模](12.数据库/04.文档数据库/01.MongoDB/05.MongoDB建模.md)
+- [MongoDB 建模示例](12.数据库/04.文档数据库/01.MongoDB/06.MongoDB建模示例.md)
+- [MongoDB 索引](12.数据库/04.文档数据库/01.MongoDB/07.MongoDB索引.md)
+- [MongoDB 复制](12.数据库/04.文档数据库/01.MongoDB/08.MongoDB复制.md)
+- [MongoDB 分片](12.数据库/04.文档数据库/01.MongoDB/09.MongoDB分片.md)
+- [MongoDB 运维](12.数据库/04.文档数据库/01.MongoDB/20.MongoDB运维.md)
+
+## KV 数据库
+
+### Redis
+
+![img](https://raw.githubusercontent.com/dunwu/images/master/snap/20200713105627.png)
+
+- [Redis 面试总结](12.数据库/05.KV数据库/01.Redis/01.Redis面试总结.md) 💯
+- [Redis 应用指南](12.数据库/05.KV数据库/01.Redis/02.Redis应用指南.md) ⚡ - 关键词：`内存淘汰`、`事件`、`事务`、`管道`、`发布与订阅`
+- [Redis 数据类型和应用](12.数据库/05.KV数据库/01.Redis/03.Redis数据类型和应用.md) - 关键词：`STRING`、`HASH`、`LIST`、`SET`、`ZSET`、`BitMap`、`HyperLogLog`、`Geo`
+- [Redis 持久化](12.数据库/05.KV数据库/01.Redis/04.Redis持久化.md) - 关键词：`RDB`、`AOF`、`SAVE`、`BGSAVE`、`appendfsync`
+- [Redis 复制](12.数据库/05.KV数据库/01.Redis/05.Redis复制.md) - 关键词：`SLAVEOF`、`SYNC`、`PSYNC`、`REPLCONF ACK`
+- [Redis 哨兵](12.数据库/05.KV数据库/01.Redis/06.Redis哨兵.md) - 关键词：`Sentinel`、`PING`、`INFO`、`Raft`
+- [Redis 集群](12.数据库/05.KV数据库/01.Redis/07.Redis集群.md) - 关键词：`CLUSTER MEET`、`Hash slot`、`MOVED`、`ASK`、`SLAVEOF no one`、`redis-trib`
+- [Redis 实战](12.数据库/05.KV数据库/01.Redis/08.Redis实战.md) - 关键词：`缓存`、`分布式锁`、`布隆过滤器`
+- [Redis 运维](12.数据库/05.KV数据库/01.Redis/20.Redis运维.md) 🔨 - 关键词：`安装`、`命令`、`集群`、`客户端`
+
+## 列式数据库
+
+### HBase
+
+- [HBase 快速入门](12.数据库/06.列式数据库/01.HBase/01.HBase快速入门.md)
+- [HBase 数据模型](12.数据库/06.列式数据库/01.HBase/02.HBase数据模型.md)
+- [HBase Schema 设计](12.数据库/06.列式数据库/01.HBase/03.HBaseSchema设计.md)
+- [HBase 架构](12.数据库/06.列式数据库/01.HBase/04.HBase架构.md)
+- [HBase Java API 基础特性](12.数据库/06.列式数据库/01.HBase/10.HBaseJavaApi基础特性.md)
+- [HBase Java API 高级特性之过滤器](12.数据库/06.列式数据库/01.HBase/11.HBaseJavaApi高级特性之过滤器.md)
+- [HBase Java API 高级特性之协处理器](12.数据库/06.列式数据库/01.HBase/12.HBaseJavaApi高级特性之协处理器.md)
+- [HBase Java API 其他高级特性](12.数据库/06.列式数据库/01.HBase/13.HBaseJavaApi其他高级特性.md)
+- [HBase 运维](12.数据库/06.列式数据库/01.HBase/21.HBase运维.md)
+- [HBase 命令](12.数据库/06.列式数据库/01.HBase/22.HBase命令.md)
 
 ## 搜索引擎数据库
 
@@ -116,24 +163,30 @@ TODO...
 
 > Elasticsearch 是一个基于 Lucene 的搜索和数据分析工具，它提供了一个分布式服务。Elasticsearch 是遵从 Apache 开源条款的一款开源产品，是当前主流的企业级搜索引擎。
 
-- [Elasticsearch 面试总结](nosql/elasticsearch/elasticsearch-interview.md) 💯
-- [Elasticsearch 快速入门](nosql/elasticsearch/Elasticsearch快速入门.md)
-- [Elasticsearch 简介](nosql/elasticsearch/Elasticsearch简介.md)
-- [Elasticsearch Rest API](nosql/elasticsearch/ElasticsearchRestApi.md)
-- [ElasticSearch Java API 之 High Level REST Client](nosql/elasticsearch/ElasticsearchHighLevelRestJavaApi.md)
-- [Elasticsearch 索引管理](nosql/elasticsearch/Elasticsearch索引管理.md)
-- [Elasticsearch 查询](nosql/elasticsearch/Elasticsearch查询.md)
-- [Elasticsearch 高亮](nosql/elasticsearch/Elasticsearch高亮.md)
-- [Elasticsearch 排序](nosql/elasticsearch/Elasticsearch排序.md)
-- [Elasticsearch 聚合](nosql/elasticsearch/Elasticsearch聚合.md)
-- [Elasticsearch 分析器](nosql/elasticsearch/Elasticsearch分析器.md)
-- [Elasticsearch 运维](nosql/elasticsearch/Elasticsearch运维.md)
-- [Elasticsearch 性能优化](nosql/elasticsearch/Elasticsearch性能优化.md)
+- [Elasticsearch 面试总结](12.数据库/07.搜索引擎数据库/01.Elasticsearch/01.Elasticsearch面试总结.md) 💯
+- [Elasticsearch 快速入门](12.数据库/07.搜索引擎数据库/01.Elasticsearch/02.Elasticsearch快速入门.md)
+- [Elasticsearch 简介](12.数据库/07.搜索引擎数据库/01.Elasticsearch/03.Elasticsearch简介.md)
+- [Elasticsearch 索引](12.数据库/07.搜索引擎数据库/01.Elasticsearch/04.Elasticsearch索引.md)
+- [Elasticsearch 查询](12.数据库/07.搜索引擎数据库/01.Elasticsearch/05.Elasticsearch查询.md)
+- [Elasticsearch 高亮](12.数据库/07.搜索引擎数据库/01.Elasticsearch/06.Elasticsearch高亮.md)
+- [Elasticsearch 排序](12.数据库/07.搜索引擎数据库/01.Elasticsearch/07.Elasticsearch排序.md)
+- [Elasticsearch 聚合](12.数据库/07.搜索引擎数据库/01.Elasticsearch/08.Elasticsearch聚合.md)
+- [Elasticsearch 分析器](12.数据库/07.搜索引擎数据库/01.Elasticsearch/09.Elasticsearch分析器.md)
+- [Elasticsearch 性能优化](12.数据库/07.搜索引擎数据库/01.Elasticsearch/10.Elasticsearch性能优化.md)
+- [Elasticsearch Rest API](12.数据库/07.搜索引擎数据库/01.Elasticsearch/11.ElasticsearchRestApi.md)
+- [ElasticSearch Java API 之 High Level REST Client](12.数据库/07.搜索引擎数据库/01.Elasticsearch/12.ElasticsearchHighLevelRestJavaApi.md)
+- [Elasticsearch 集群和分片](12.数据库/07.搜索引擎数据库/01.Elasticsearch/13.Elasticsearch集群和分片.md)
+- [Elasticsearch 运维](12.数据库/07.搜索引擎数据库/01.Elasticsearch/20.Elasticsearch运维.md)
 
-## 中间件
+### Elastic
 
-- [版本管理中间件 flyway](middleware/flyway.md)
-- [分库分表中间件 ShardingSphere](middleware/shardingsphere.md)
+- [Elastic 快速入门](12.数据库/07.搜索引擎数据库/02.Elastic/01.Elastic快速入门.md)
+- [Elastic 技术栈之 Filebeat](12.数据库/07.搜索引擎数据库/02.Elastic/02.Elastic技术栈之Filebeat.md)
+- [Filebeat 运维](12.数据库/07.搜索引擎数据库/02.Elastic/03.Filebeat运维.md)
+- [Elastic 技术栈之 Kibana](12.数据库/07.搜索引擎数据库/02.Elastic/04.Elastic技术栈之Kibana.md)
+- [Kibana 运维](12.数据库/07.搜索引擎数据库/02.Elastic/05.Kibana运维.md)
+- [Elastic 技术栈之 Logstash](12.数据库/07.搜索引擎数据库/02.Elastic/06.Elastic技术栈之Logstash.md)
+- [Logstash 运维](12.数据库/07.搜索引擎数据库/02.Elastic/07.Logstash运维.md)
 
 ## 资料 📚
 
@@ -146,7 +199,7 @@ TODO...
   - [CMU 15445 数据库基础课程](https://15445.courses.cs.cmu.edu/fall2019/schedule.html)
   - [CMU 15721 数据库高级课程](https://15721.courses.cs.cmu.edu/spring2020/schedule.html)
   - [检索技术核心 20 讲](https://time.geekbang.org/column/intro/100048401) - 极客教程【进阶】
-  - [后端存储实战课](https://time.geekbang.org/column/intro/100046801) - 极客教程【进阶】
+  - [后端存储实战课](https://time.geekbang.org/column/intro/100046801) - 极客教程【入门】：讲解存储在电商领域的种种应用和一些基本特性
 - **论文**
   - [Efficiency in the Columbia Database Query Optimizer](https://15721.courses.cs.cmu.edu/spring2018/papers/15-optimizer1/xu-columbia-thesis1998.pdf)
   - [How Good Are Query Optimizers, Really?](http://www.vldb.org/pvldb/vol9/p204-leis.pdf)
@@ -200,8 +253,7 @@ TODO...
     - [Better Parallel Replication for MySQL](https://medium.com/booking-com-infrastructure/better-parallel-replication-for-mysql-14e2d7857813)
     - [Evaluating MySQL Parallel Replication Part 2: Slave Group Commit](https://medium.com/booking-com-infrastructure/evaluating-mysql-parallel-replication-part-2-slave-group-commit-459026a141d2)
     - [Evaluating MySQL Parallel Replication Part 3: Benchmarks in Production](https://medium.com/booking-com-infrastructure/evaluating-mysql-parallel-replication-part-3-benchmarks-in-production-db5811058d74)
-    - [Evaluating MySQL Parallel Replication Part 4: More Benchmarks in Production
-      ](https://medium.com/booking-com-infrastructure/evaluating-mysql-parallel-replication-part-4-more-benchmarks-in-production-49ee255043ab)
+    - [Evaluating MySQL Parallel Replication Part 4: More Benchmarks in Production](https://medium.com/booking-com-infrastructure/evaluating-mysql-parallel-replication-part-4-more-benchmarks-in-production-49ee255043ab)
     - [Evaluating MySQL Parallel Replication Part 4, Annex: Under the Hood](https://medium.com/booking-com-infrastructure/evaluating-mysql-parallel-replication-part-4-annex-under-the-hood-eb456cf8b2fb)
   - Mysql 数据分区
     - [StackOverflow: MySQL sharding approaches?](https://stackoverflow.com/questions/5541421/mysql-sharding-approaches)
@@ -209,8 +261,7 @@ TODO...
     - [How to Scale Big Data Applications](https://www.percona.com/sites/default/files/presentations/How to Scale Big Data Applications.pdf)
     - [MySQL Sharding with ProxySQL](https://www.percona.com/blog/2016/08/30/mysql-sharding-with-proxysql/)
   - 各公司的 Mysql 数据分区经验分享
-    - [MailChimp: Using Shards to Accommodate Millions of Users
-      ](https://devs.mailchimp.com/blog/using-shards-to-accommodate-millions-of-users/)
+    - [MailChimp: Using Shards to Accommodate Millions of Users](https://devs.mailchimp.com/blog/using-shards-to-accommodate-millions-of-users/)
     - [Uber: Code Migration in Production: Rewriting the Sharding Layer of Uber’s Schemaless Datastore](https://eng.uber.com/schemaless-rewrite/)
     - [Sharding & IDs at Instagram](https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c)
     - [Airbnb: How We Partitioned Airbnb’s Main Database in Two Weeks](https://medium.com/airbnb-engineering/how-we-partitioned-airbnb-s-main-database-in-two-weeks-55f7e006ff21)
@@ -315,11 +366,11 @@ TODO...
   - [mongodb-json-files](https://github.com/ozlerhakan/mongodb-json-files)
 - **文章**
   - [Introduction to MongoDB](https://www.slideshare.net/mdirolf/introduction-to-mongodb)
-- [eBay: Building Mission-Critical Multi-Data Center Applications with MongoDB](https://www.mongodb.com/blog/post/ebay-building-mission-critical-multi-data-center-applications-with-mongodb)
-- [The AWS and MongoDB Infrastructure of Parse: Lessons Learned](https://medium.baqend.com/parse-is-gone-a-few-secrets-about-their-infrastructure-91b3ab2fcf71)
-- [Migrating Mountains of Mongo Data](https://medium.com/build-addepar/migrating-mountains-of-mongo-data-63e530539952)
+  - [eBay: Building Mission-Critical Multi-Data Center Applications with MongoDB](https://www.mongodb.com/blog/post/ebay-building-mission-critical-multi-data-center-applications-with-mongodb)
+  - [The AWS and MongoDB Infrastructure of Parse: Lessons Learned](https://medium.baqend.com/parse-is-gone-a-few-secrets-about-their-infrastructure-91b3ab2fcf71)
+  - [Migrating Mountains of Mongo Data](https://medium.com/build-addepar/migrating-mountains-of-mongo-data-63e530539952)
 - **更多资源**
-- [Github: Awesome MongoDB](https://github.com/ramnes/awesome-mongodb)
+  - [Github: Awesome MongoDB](https://github.com/ramnes/awesome-mongodb)
 
 ### 搜索引擎数据库资料
 
@@ -339,10 +390,10 @@ TODO...
   - [Elasticsearch+Logstash+Kibana 教程](https://www.cnblogs.com/xing901022/p/4704319.html)
   - [ELK（Elasticsearch、Logstash、Kibana）安装和配置](https://github.com/judasn/Linux-Tutorial/blob/master/ELK-Install-And-Settings.md)
   - **性能调优相关**的工程实践
-  - [Elasticsearch Performance Tuning Practice at eBay](https://www.ebayinc.com/stories/blogs/tech/elasticsearch-performance-tuning-practice-at-ebay/)
-  - [Elasticsearch at Kickstarter](https://kickstarter.engineering/elasticsearch-at-kickstarter-db3c487887fc)
-  - [9 tips on ElasticSearch configuration for high performance](https://www.loggly.com/blog/nine-tips-configuring-elasticsearch-for-high-performance/)
-  - [Elasticsearch In Production - Deployment Best Practices](https://medium.com/@abhidrona/elasticsearch-deployment-best-practices-d6c1323b25d7)
+    - [Elasticsearch Performance Tuning Practice at eBay](https://www.ebayinc.com/stories/blogs/tech/elasticsearch-performance-tuning-practice-at-ebay/)
+    - [Elasticsearch at Kickstarter](https://kickstarter.engineering/elasticsearch-at-kickstarter-db3c487887fc)
+    - [9 tips on ElasticSearch configuration for high performance](https://www.loggly.com/blog/nine-tips-configuring-elasticsearch-for-high-performance/)
+    - [Elasticsearch In Production - Deployment Best Practices](https://medium.com/@abhidrona/elasticsearch-deployment-best-practices-d6c1323b25d7)
 - **更多资源**
   - [GitHub: Awesome ElasticSearch](https://github.com/dzharii/awesome-elasticsearch)
 
@@ -372,4 +423,4 @@ TODO...
 
 ## 传送 🚪
 
-◾ 🏠 [DB-TUTORIAL 首页](https://github.com/dunwu/db-tutorial) ◾ 🎯 [我的博客](https://github.com/dunwu/blog) ◾
+◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/waterdrop/) ◾ 🎯 [钝悟的博客](https://dunwu.github.io/blog/) ◾
